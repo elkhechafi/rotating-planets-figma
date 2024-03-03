@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .orbit-container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+.orbiting-div {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #3498db;
+  border-radius: 50%;
+}
+
+    </style>
+</head>
+<body>
+    <div class="orbit-container" id="container1">
+        <div class="orbiting-div"></div>
+      </div>
+      <div class="orbit-container" id="container2">
+        <div class="orbiting-div"></div>
+      </div>
+      
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+  var containers = document.querySelectorAll(".orbit-container");
+
+  containers.forEach(function(container) {
+    var orbitingDiv = container.querySelector(".orbiting-div");
+    var radius = container.offsetWidth / 2;
+    var angle = Math.random() * Math.PI * 2; // Random initial angle for variety
+
+    function orbit() {
+      var x = container.offsetWidth / 2 + radius * Math.cos(angle);
+      var y = container.offsetHeight / 2 + radius * Math.sin(angle);
+      orbitingDiv.style.left = x + "px";
+      orbitingDiv.style.top = y + "px";
+      angle += 0.01; // Adjust the speed of orbiting
+      requestAnimationFrame(orbit);
+    }
+
+    orbit();
+  });
+});
+
+    </script>
+</body>
+</html>
