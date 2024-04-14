@@ -3,6 +3,7 @@
     padding: 0%;
     box-sizing: border-box;
 }
+
 body{
     /* Etheron */
     position: relative;
@@ -11,12 +12,14 @@ body{
     overflow: hidden;
     background: linear-gradient(120.56deg, #1D2948 -2.28%, #141D33 21.31%, #0F1628 33.91%, #050A16 92.75%);
 }
+
 svg{
     position: absolute;
     top: 0%;
     left: 0%;
     z-index: 2;
 }
+
 .Navigation{
     width: 90%;
     margin: 1% 5%;
@@ -136,6 +139,47 @@ svg{
     }
 }
 
+.left-carousel{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img{
+        width: 100;
+    }
+    h4{/* ORIONIS */
+
+        max-width: 171px;
+        max-height: 46px;
+        
+        font-family: 'Satoshi';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 33.9595px;
+        line-height: 46px;
+        /* identical to box height */
+        text-align: center;
+        letter-spacing: 0.16em;
+        
+        background: linear-gradient(101.23deg, rgba(237, 237, 237, 0.8) 24.07%, rgba(182, 182, 182, 0.8) 96.8%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        
+        
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        
+    }
+}
+.planet{
+    width: 20%;
+}
 .orbit{
     width: 80%;
     margin: 0% 6%;
@@ -158,6 +202,45 @@ svg{
 
 
         }
+    }
+}
+
+.right-carousel{
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img{
+        width: 100;
+    }
+    h4{/* LUMENARA */
+
+        width: 221px;
+        height: 46px;
+        
+        font-family: 'Satoshi';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 33.9595px;
+        line-height: 46px;
+        /* identical to box height */
+        text-align: center;
+        letter-spacing: 0.16em;
+        
+        background: linear-gradient(101.23deg, rgba(237, 237, 237, 0.8) 24.07%, rgba(182, 182, 182, 0.8) 96.8%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        
+        
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        
     }
 }
 
