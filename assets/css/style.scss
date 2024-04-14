@@ -7,8 +7,8 @@ body{
     /* Etheron */
     position: relative;
     width: 100vw;
-    height: 100vh;
-    overflow-x: hidden;
+    height: 100%;
+    overflow: hidden;
     background: linear-gradient(120.56deg, #1D2948 -2.28%, #141D33 21.31%, #0F1628 33.91%, #050A16 92.75%);
 }
 svg{
@@ -34,10 +34,10 @@ svg{
 
 .Content{
     width: 90%;
-    margin: 3% auto;
+    // margin: 2% auto 0%;
     text-align: center;
     position: absolute;
-    top: 10%;
+    top: 5%;
     left: 5%;
     .left{
         /* Rectangle 4 */
@@ -136,10 +136,36 @@ svg{
     }
 }
 
-.planets{
-    width: 100%;
-    margin: 0%;
+.orbit{
+    width: 80%;
+    margin: 0% 6%;
+    height: 97%;
+    .planets{
+        width: 100%;
+        margin: 0% auto;
+        height: 60%;
+        position: absolute;
+        margin-top: 1%;
+        #outline4{/* Outline 4 */
+
+            box-sizing: border-box;
+
+            position: absolute;
+            width: 1305.94px;
+            height: 1305.94px;
+            left: 215.37px;
+            top: 215.37px;
+
+
+        }
+    }
+}
+
+.active-planet{
+    // position: absolute;
+    // right: 0%;
+    // bottom: 0%;
+    width: 60%;
     height: 100%;
-    position: relative;
-    margin-top: 1%;
+    margin: 5% 20% 0%;
 }
