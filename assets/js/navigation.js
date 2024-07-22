@@ -1,0 +1,1 @@
+// this page is to work on the transition of the planets when scrolling the idea is hte main planet should come from behind like a flip card, and the small planetsd should also turn, plus you need to figure out a way to flick the stars
